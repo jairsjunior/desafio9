@@ -1,7 +1,6 @@
 # Desafio 09 | Banco do Brasil
 
 - [Desafio 09 | Banco do Brasil](#desafio-09--banco-do-brasil)
-  - [Para te ajudar](#para-te-ajudar)
   - [1 - Introdução](#1---introdu%c3%a7%c3%a3o)
   - [2 - Desafio](#2---desafio)
 
