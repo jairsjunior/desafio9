@@ -1,0 +1,39 @@
+version: "3.5"
+
+services:
+  nodemcu-www:
+    build: ./nodemcu-www
+    image: jairsjunior/nodemcu-www
+    ports:
+      - 2015:2015
+
+  vernemq:
+    image: erlio/docker-vernemq
+    ports:
+      - 8081:8080
+      - 1883:1883
+    environment:
+      - DOCKER_VERNEMQ_ALLOW_ANONYMOUS=off
+      - DOCKER_VERNEMQ_USER_DEVICE1=d3v1c31t3st
+      - DOCKER_VERNEMQ_LOG__CONSOLE__LEVEL=info
+  
+  node-mcu-simulator:
+    build: ./nodemcu-simulator
+    image: jairsjunior/node-mcu-simulator
+    environment:
+      - MQTT_HOST=vernemq
+      - MQTT_PORT=1883
+      - MQTT_USERNAME=device1
+      - MQTT_PASSWORD=d3v1c31t3st
+  
+  node-mcu-api:
+    build: ./nodemcu-api
+    image: jairsjunior/node-mcu-api
+    ports:
+      - 8080:8080
+    environment:
+      - MQTT_HOST=vernemq
+      - MQTT_PORT=1883
+      - MQTT_USERNAME=device1
+      - MQTT_PASSWORD=d3v1c31t3st
+  

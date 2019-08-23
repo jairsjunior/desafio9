@@ -1,0 +1,8 @@
+version: "3.5"
+
+services:
+  nodemcu-www:
+    build: .
+    ports:
+      - 2015:2015
+    image: jairsjunior/nodemcu-www

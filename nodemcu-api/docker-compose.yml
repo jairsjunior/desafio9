@@ -1,0 +1,13 @@
+version: "3.5"
+
+services:
+  node-mcu-api:
+    build: .
+    image: jairsjunior/node-mcu-api
+    ports:
+      - 8080:8080
+    environment:
+      - MQTT_HOST=172.20.10.3
+      - MQTT_PORT=1883
+      - MQTT_USERNAME=device1
+      - MQTT_PASSWORD=d3v1c31t3st

@@ -1,0 +1,15 @@
+{
+  "name": "nodemcu-simulator",
+  "version": "0.0.1",
+  "description": "Sensors simulate",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Jair de Souza Junior",
+  "license": "MIT",
+  "dependencies": {
+    "mqtt": "^3.0.0"
+  }
+}
