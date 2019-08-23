@@ -5,9 +5,6 @@
   - [1 - Introdução](#1---introdu%c3%a7%c3%a3o)
   - [2 - Desafio](#2---desafio)
 
-## Para te ajudar
-
-* [License](#license)
 ## 1 - Introdução
 O Banco do Brasil, maior banco da América Latina, com destaque em segmentos como agronegócio, infraestrutura, micro e pequenas empresas.
 O seu maior propósito é estar próximo das pessoas e ajudar a preservar o que é importante para seus clientes, acionistas, funcionários e toda a sociedade.
